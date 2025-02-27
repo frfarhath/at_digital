@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       {/* Privacy Policy & Terms */}
-      <div className="text-center mt-6 border-t border-white pt-2 text-[12px] w-full md:w-[630px] mx-auto flex justify-center gap-4">
+      <div className="font-inter font-medium text-center mt-6 border-t border-white pt-2 text-[12px] w-full md:w-[630px] mx-auto flex justify-center gap-4">
         <a href="#" className="mr-4">
           Privacy Policy
         </a>
