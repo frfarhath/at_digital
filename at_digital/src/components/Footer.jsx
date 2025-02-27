@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Logo & Description */}
         <div className="w-full md:w-[380px] mb-6 md:mb-0">
           <img src={logo} alt="at digital" className="mb-4" />
-          <p className="text-[14px] leading-[20px] font-thin">
+          <p className="text-[14px] leading-[20px] font-inter font-medium">
             Your goal is our target. Not anything in between. We use online
             marketing platforms and tools to achieve a single objective - your
             business results.
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="w-full sm:w-auto mt-4 sm:mt-0">
             <h3 className="font-bold text-[16px] mb-2">Our Services</h3>
-            <ul className="text-[14px] leading-[24px]">
+            <ul className="text-[14px] leading-[24px] font-inter font-medium tracking-normal">
               <li className="mb-[2px]">Social Media Marketing</li>
               <li className="mb-[2px]">Web & Mobile App Development</li>
               <li className="mb-[2px]">Data & Analytics</li>
