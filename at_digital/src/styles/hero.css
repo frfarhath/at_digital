@@ -1,0 +1,77 @@
+/* ✅ Default for large screens (1440px & 1200px) */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 630px;
+  height: 306px;
+  top: 354px;
+  left: 80px;
+  padding: 24px 40px 32px;
+  gap: 20px;
+  background: linear-gradient(to right, #4DCA79, #1CBDDD);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2%;
+}
+
+/* ✅ 1200px - Slight adjustment */
+@media (max-width: 1200px) {
+  .hero-text-box {
+    width: 622px;
+    height: 306px;
+    top: 354px;
+    left: 60px;
+  }
+}
+
+/* 📌 1024px - 769px (Fix Early Responsive Overlap) */
+@media (max-width: 1024px) {
+  .hero-text-box {
+    position: relative; /* Make it flow normally */
+    width: 90%; /* Adjust width */
+    height: auto;
+    top: auto;
+    left: auto;
+    margin: 20px auto; /* Center it and add space */
+    text-align: center;
+  }
+}
+
+/* ✅ 768px - Moves below image properly */
+@media (max-width: 768px) {
+  .hero-text-box {
+    width: 100%;
+    height: auto;
+    padding: 24px 40px 32px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+/* ✅ 375px - Adjusts for small screens */
+@media (max-width: 375px) {
+  .hero-text-box {
+    width: 100%;
+    height: auto;
+    padding: 24px 20px 32px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

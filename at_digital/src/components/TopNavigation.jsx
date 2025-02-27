@@ -39,7 +39,7 @@ const TopNavigation = () => {
             className="absolute top-6 right-6"
             onClick={() => setMenuOpen(false)}
           >
-            <X size={32} color="black" />
+            
           </button>
 
           {/* Mobile Nav Items */}

@@ -22,7 +22,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-8 mt-5">
+    <div className="w-full max-w-2xl mx-auto p-8 mt-[5px]">
       <h2 className="text-center text-[22px] font-[Poppins] font-semibold text-[#4F46E5] mb-6">
         Frequently asked questions
       </h2>
@@ -49,7 +49,7 @@ const FAQs = () => {
             )}
           </div>
           {open === index && (
-            <p className="mt-3 text-[14px] text-gray-600">{item.answer}</p>
+            <p className="mt-3 text-[14px] text-gray-600 ">{item.answer}</p>
           )}
         </div>
       ))}

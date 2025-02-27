@@ -2,10 +2,10 @@ import img2 from "../assets/image2.png";
 import Button from "./Button";
 
 const DigitalStrategy = () => (
-  <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 w-full max-w-[1064px] px-6 md:px-12 mx-auto pt-12 md:pt-16">
+  <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start justify-center sm:justify-between gap-6 sm:gap-12 w-full max-w-[1064px] px-6 sm:px-12 mx-auto pt-12 sm:pt-16">
     
-    {/* Image Section (Smaller Size) - Appears First on Mobile, Second on Desktop */}
-    <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[330px] flex-shrink-0 order-1 md:order-2">
+    {/* Image Section */}
+    <div className="w-full sm:w-auto max-w-[250px] sm:max-w-[280px] md:max-w-[300px] flex-shrink-0 flex justify-center">
       <img 
         src={img2} 
         alt="Digital Strategy" 
@@ -13,8 +13,8 @@ const DigitalStrategy = () => (
       />
     </div>
     
-    {/* Content Section (More Space) - Appears Second on Mobile, First on Desktop */}
-    <div className="flex flex-col w-full max-w-[650px] text-center md:text-left order-2 md:order-1">
+    {/* Content Section */}
+    <div className="flex flex-col flex-1 text-center sm:text-left max-w-[600px]">
       <h2 className="text-[#4F46E5] text-[20px] sm:text-[22px] md:text-[27px] font-[Poppins] font-semibold leading-[26px] sm:leading-[28px] md:leading-[33px] tracking-[0.4px]">
         Digital Strategy Consulting
       </h2>
@@ -25,7 +25,9 @@ const DigitalStrategy = () => (
         most efficient model for your business.
       </p>
       
-      <Button className="mt-6 w-[120px] xs:w-[129px] xs:h-[36px] sm:h-[38px] mx-auto md:mx-0">LEARN MORE</Button>
+      <div className="mt-6 flex justify-center sm:justify-start">
+        <Button className="mt-6 w-[120px] xs:w-[129px] xs:h-[36px] sm:h-[38px] mx-auto md:mx-0">LEARN MORE</Button>
+      </div>
     </div>
   </div>
 );
