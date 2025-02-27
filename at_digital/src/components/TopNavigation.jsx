@@ -15,11 +15,21 @@ const TopNavigation = () => {
       {/* Desktop Menu (visible at 768px and above) */}
       <div className="hidden sm:flex items-center">
         <div className="flex gap-[22px] font-inter font-medium text-[14px]">
-          <a href="#" className="hover:underline">HOME</a>
-          <a href="#" className="hover:underline">SERVICES</a>
-          <a href="#" className="hover:underline">ABOUT US</a>
-          <a href="#" className="hover:underline">CONTACT US</a>
-          <a href="#" className="hover:underline">CAREERS</a>
+          <a href="#" className="hover:underline">
+            HOME
+          </a>
+          <a href="#" className="hover:underline">
+            SERVICES
+          </a>
+          <a href="#" className="hover:underline">
+            ABOUT US
+          </a>
+          <a href="#" className="hover:underline">
+            CONTACT US
+          </a>
+          <a href="#" className="hover:underline">
+            CAREERS
+          </a>
         </div>
       </div>
 
@@ -38,17 +48,45 @@ const TopNavigation = () => {
           <button
             className="absolute top-6 right-6"
             onClick={() => setMenuOpen(false)}
-          >
-            
-          </button>
+          ></button>
 
           {/* Mobile Nav Items */}
           <nav className="flex flex-col gap-6 text-[18px] font-medium">
-            <a href="#" className="hover:underline" onClick={() => setMenuOpen(false)}>HOME</a>
-            <a href="#" className="hover:underline" onClick={() => setMenuOpen(false)}>SERVICES</a>
-            <a href="#" className="hover:underline" onClick={() => setMenuOpen(false)}>ABOUT US</a>
-            <a href="#" className="hover:underline" onClick={() => setMenuOpen(false)}>CONTACT US</a>
-            <a href="#" className="hover:underline" onClick={() => setMenuOpen(false)}>CAREERS</a>
+            <a
+              href="#"
+              className="hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              HOME
+            </a>
+            <a
+              href="#"
+              className="hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              SERVICES
+            </a>
+            <a
+              href="#"
+              className="hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              ABOUT US
+            </a>
+            <a
+              href="#"
+              className="hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              CONTACT US
+            </a>
+            <a
+              href="#"
+              className="hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              CAREERS
+            </a>
           </nav>
         </div>
       )}

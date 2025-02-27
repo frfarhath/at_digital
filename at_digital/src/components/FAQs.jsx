@@ -12,12 +12,16 @@ const FAQs = () => {
         "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },
     {
-      question: "Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?",
-      answer: "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
+      question:
+        "Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },
     {
-      question: "Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?",
-      answer: "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
+      question:
+        "Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },
   ];
 
@@ -27,10 +31,7 @@ const FAQs = () => {
         Frequently asked questions
       </h2>
       {questions.map((item, index) => (
-        <div
-          key={index}
-          className={`p-5 mb-3 rounded-lg  bg-[#F8F6FF]`}
-        >
+        <div key={index} className={`p-5 mb-3 rounded-lg  bg-[#F8F6FF]`}>
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(index)}
@@ -49,7 +50,9 @@ const FAQs = () => {
             )}
           </div>
           {open === index && (
-            <p className="mt-3 text-[14px] text-gray-600 ">{item.answer}</p>
+            <p className="mt-3 text-[14px] text-gray-600 font-inter font-medium">
+              {item.answer}
+            </p>
           )}
         </div>
       ))}

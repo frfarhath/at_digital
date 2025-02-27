@@ -1,6 +1,6 @@
 import heroimage from "../assets/HeroImage.png";
-import Button from "./Button"; 
-import "../styles/hero.css"; // Import CSS file
+import Button from "./Button";
+import "../styles/hero.css";
 
 const Hero = () => (
   <div className="hero-container">
